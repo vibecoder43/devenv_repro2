@@ -65,7 +65,6 @@ copy_fixture() {
       --exclude=.git \
       --exclude=.devenv \
       --exclude=.direnv \
-      --exclude=devenv.lock \
       -cf - .
   ) | tar -xf - -C "$workdir"
 }
